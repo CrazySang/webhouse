@@ -10,34 +10,64 @@
 
 <body>
     <ul id="menu">
-        <li><a href="#content1">특징</a></li>
-        <li><a href="#content2">효능</a></li>
-        <li><a href="#content3">주문하기</a></li>
-        <li><a href="#content4">상품정보</a></li>
+        <li>
+            <a href="#content1">특징</a>
+        </li>
+        <li>
+            <a href="#content2">효능</a>
+        </li>
+        <li>
+            <a href="#content3">주문하기</a>
+        </li>
+        <li>
+            <a href="#content4">상품정보</a>
+        </li>
     </ul>
     <hr>
     <h1>방울 토마토</h1>
     <figure>
-        <img src="/webhome/image/tomato.jpg" alt="토마토">
+        <img src="/image/tomato.jpg" alt="토마토">
         <figcaption>생산된 방울 토마토</figcaption>
     </figure>
     <hr>
     <h1 id="content1">특징</h1>
-    <li>맛이 달고 진함</li>
-    <li>크기가 작고 귀여워서 아이들도 좋아함</li>
-    <li>곤겅헌 성분이 많이 함유됨</li>
-    <li>다양한 요리나 음료에 사용 가능</li>
-    <a href="https://www.10000recipe.com/recipe/6840905" target="_blank">방울 토마토 요리방법 보기</a>
+    <ul>
+        <li>
+            맛이 달고 진함
+        </li>
+        <li>
+            크기가 작고 귀여워서 아이들도 좋아함
+        </li>
+        <li>
+            곤겅헌 성분이 많이 함유됨
+        </li>
+        <li>
+            다양한 요리나 음료에 사용 가능
+        </li>
+        <a href="https://www.10000recipe.com/recipe/6840905" target="_blank">방울 토마토 요리방법 보기</a>
+    </ul>
     <hr>
     <h1 id="content2">효능</h1>
-    <li><mark>향산화 작용</mark>으로 노화 방지에 좋다.</li>
-    <li><mark>칼륨 함량</mark>이 높아서 혈압 조절에 좋다.</li>
-    <li><mark>비타민 C 함량</mark>이 높아서 면역력 향상에 좋다.</li>
-    <li><mark>체내 독소 제거와 간 기능 개선</mark>에도 효과가 좋다.</li>
+    <ul>
+        <li>
+            <mark>향산화 작용</mark>으로 노화 방지에 좋다.
+        </li>
+        <li>
+            <mark>칼륨 함량</mark>이 높아서 혈압 조절에 좋다.
+        </li>
+        <li>
+            <mark>비타민 C 함량</mark>이 높아서 면역력 향상에 좋다.
+        </li>
+        <li>
+            <mark>체내 독소 제거와 간 기능 개선</mark>에도 효과가 좋다.
+        </li>
+    </ul>
     <hr>
     <h1 id="content3">주문하기</h1>
-    <p>방울 토마토는 <u><strong>3kg에 2만원</strong></u>입니다. 주문하시려면 아래 링크를 클릭해주세요. </p>
-    <input type="submit" value="주문하기">
+    <p>방울 토마토는 <u><strong>3kg에 2만원</strong></u>입니다. 주문하시려면 아래 링크를 클릭해주세요.</p>
+    <from action="order.php" method="get">
+        <input type="submit" value="주문하기" onclick="window.location.href='http://127.0.0.1:5500/Week6/order.html'">
+    </from>
     <hr>
     <h1 id="content4">상품정보</h1>
     <table border="1">
@@ -62,7 +92,7 @@
             <td>하절기</td>
         </tr>
     </table>
-    <img src="/webhome/image/tomato_1.png" width="100" height="100">
+    <img src="/image/tomato_1.png" width="100" height="100">
     <hr>
     <p><a href="#menu">
             <h1><strong>Top으로 이동</strong></h1>
