@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>상품 주문서</h1>
+    <form action="order_check" method="post">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="order-name">주문자 이름</label>
+                    <input type="text" name="order-name" value="">
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="tel" name="tel">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label>배송 옵션 : <input type="radio" name="subject" value="old_add"> 기존 배송지 </label>
+                    <lable><input type="radio" name="subject" value="new_add"> 새 배송지</lable>
+                </li>
+                <li>
+                    <lable for="address">주소</lable>
+                    <input type="text" name="address">
+                </li>
+                <li>
+                    <label class="reg" for="want_order">요청사항</label>
+                    <select id="want_order">
+                        <lable>요청사항</lable>
+                        <option value="want_order" selected>요청사항을 선택하세요.</option>
+                        <option value="home_door">문앞으로 배송 요청 드립니다.</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            상품
+            <br>
+            <label><input type="checkbox" name="subject" value="check1"> 방울토마토1kg <s>10,000원</s><b>8,000원</b></label>
+            <input type="text" name="want_order"><label>박스</label>
+            <br>
+            <label><input type="checkbox" name="subject" value="check2"> 방울토마토2kg <s>20,000원</s><b>16,000원</b></label>
+            <input type="text" name="want_order"><label>박스</label>
+            <br>
+            <label><input type="checkbox" name="subject" value="check3"> 방울토마토3kg <s>30,000원</s><b>24,000원</b></label>
+            <input type="text" name="want_order"><label>박스</label>
+            <br>
+            <label for="side_order">기타 사항</label>
+            <textarea name="order_text" rows="4" cols="40"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>결제 수단</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="accout" value=""> 계좌 이체
+                </li>
+                <li>
+                    <input type="radio" name="card" value=""> 카드 결제
+                </li>
+                <li>
+                    <input type="radio" name="normal" value=""> 일반 결제
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <button type="reset">초기화</button>
+        <button type="submit">결제하기</button>
+    </form>
+</body>
+
+</html>
